@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    tools:context=".MainActivity">
-</RelativeLayout>
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#90ebff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_sentence"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="#16b0f7"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/img_8ball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ball3"
+        android:layout_margin="40dp"
+        android:contentDescription="@string/_8ball_description" />
+
+    <Button
+        android:id="@+id/btn_tellMe"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_tell_me"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:textColor="#fff" />
+
+
+</LinearLayout>
